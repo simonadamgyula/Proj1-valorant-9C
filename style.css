@@ -19,3 +19,8 @@ body {
 .navbar-item > a {
     padding: unset 10px;
 }
+
+#maps-carousel {
+    margin: 20px auto;
+    width: 65% !important;
+}
