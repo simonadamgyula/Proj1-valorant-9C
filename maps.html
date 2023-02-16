@@ -7,8 +7,63 @@
     <title>Mapok</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    Ez a mapok oldal
+    <div id="navbar"></div>
+    <div id="maps-carousel" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#maps-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#maps-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#maps-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#maps-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#maps-carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#maps-carousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#maps-carousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+            <button type="button" data-bs-target="#maps-carousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
+            <button type="button" data-bs-target="#maps-carousel" data-bs-slide-to="8" aria-label="Slide 9"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="sources/maps/Ascent.png" class="d-block w-100" alt="Ascent">
+            </div>
+            <div class="carousel-item">
+                <img src="sources/maps/Bind.png" class="d-block w-100" alt="Bind">
+            </div>
+            <div class="carousel-item">
+                <img src="sources/maps/Breeze.png" class="d-block w-100" alt="Breeze">
+            </div>
+            <div class="carousel-item">
+                <img src="sources/maps/Fracture.png" class="d-block w-100" alt="Fracture">
+            </div>
+            <div class="carousel-item">
+                <img src="sources/maps/Haven.png" class="d-block w-100" alt="Haven">
+            </div>
+            <div class="carousel-item">
+                <img src="sources/maps/Icebox.png" class="d-block w-100" alt="Icebox">
+            </div>
+            <div class="carousel-item">
+                <img src="sources/maps/Lotus.png" class="d-block w-100" alt="Lotus">
+            </div>
+            <div class="carousel-item">
+                <img src="sources/maps/Pearl.png" class="d-block w-100" alt="Pearl">
+            </div>
+            <div class="carousel-item">
+                <img src="sources/maps/Split.png" class="d-block w-100" alt="Split">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#maps-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#maps-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <script>
+        $("#navbar").load("navbar.html")
+    </script>
 </body>
 </html>
