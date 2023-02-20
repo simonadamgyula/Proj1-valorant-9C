@@ -3,6 +3,7 @@
 
 body {
     font-family: 'Noto Sans', sans-serif;
+    background-color: #faf8e8;
 }
 
 .navbar {
@@ -23,4 +24,30 @@ body {
 #maps-carousel {
     margin: 20px auto;
     width: 65% !important;
+}
+
+.row {
+    margin: 20px 4px;
+}
+
+.card {
+    border: none;
+    padding: 10px;
+    outline-offset: -5px;
+    outline: 1px solid gray;
+    background: #faf8f0;
+}
+
+.agent-roles {
+    font-family: 'Anton', sans-serif;
+    font-size: xx-large;
+    margin-top: 50px;
+}
+
+.card-title {
+    font-family: 'Anton', sans-serif;
+}
+
+.card-text {
+    font-family: 'Noto Sans', sans-serif;
 }
