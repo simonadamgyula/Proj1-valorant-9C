@@ -17,7 +17,7 @@ body {
     padding: auto 10px;
 }
 
-.navbar-item > a {
+.navbar-item>a {
     padding: unset 10px;
 }
 
@@ -50,4 +50,14 @@ body {
 
 .card-text {
     font-family: 'Noto Sans', sans-serif;
+}
+
+.fa-caret-down.open {
+    transform: rotate(0deg);
+    transition: transform 0.3s linear;
+}
+
+.fa-caret-down {
+    transform: rotate(180deg);
+    transition: transform 0.3s linear;
 }
