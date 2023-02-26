@@ -15,3 +15,20 @@ function changeSlide() {
 }
 
 changeSlide();
+
+
+$(".agent-roles").on("click", function () {
+    let role = $(this).attr("class").split(" ").at(-1);
+    let arrow = $(this).find("i");
+    let isOpen = arrow.attr("class").includes("open");
+
+    if (isOpen) {
+        arrow.removeClass("open");
+        $(`.agents-${role[0]}`).css("display", "none");
+        console.log("close", arrow, role[0]);
+    } else {
+        arrow.addClass("open");
+        $(`.agents-${role[0]}`).css("display", "flex");
+        console.log("open", arrow, role[0]);
+    }
+})
