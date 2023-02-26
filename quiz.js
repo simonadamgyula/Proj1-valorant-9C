@@ -53,6 +53,18 @@ function changeQuestion() {
         $(`#answers li:nth-child(${i+1})`).text(currentQuestion.choices[i]);
     }
 
+    for (let i = 0; i < 11; i++) {
+        if (i <= current) {
+            if (qs[i].givenAnswer != -1) {
+                $(`#progressbar span:nth-child(${i+1})`).css("background-color", "cyan");
+            } else {
+                $(`#progressbar span:nth-child(${i+1})`).css("background-color", "#FF6464");
+            }
+        } else {
+            $(`#progressbar span:nth-child(${i+1})`).css("background-color", "grey");
+        }
+    }
+
     $(`#answers li:nth-child(${currentQuestion.givenAnswer + 1})`).css("background-color", "cyan");
     $(`#answers li:not(:nth-child(${currentQuestion.givenAnswer + 1}))`).css("background-color", "white");
 

@@ -65,3 +65,17 @@ body {
 #answers {
     list-style-type: none;
 }
+
+#progressbar {
+    display: inline-flex;
+    outline: 1px solid black;
+}
+
+#progressbar span {
+    background-color: gray;
+    outline: 1px solid white;
+    display: inline-block;
+    width: 50px;
+    height: 20px;
+    margin: 0;
+}
