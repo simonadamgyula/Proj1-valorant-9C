@@ -4,6 +4,7 @@
 body {
     font-family: 'Noto Sans', sans-serif;
     background-color: #faf8e8;
+    min-height: 100vh;
 }
 
 .navbar {
@@ -62,13 +63,35 @@ body {
     transition: transform 0.3s linear;
 }
 
+#question-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 #answers {
     list-style-type: none;
+    padding: 0;
+}
+
+#answers li {
+    border: 1px solid grey;
+    border-radius: 5px;
+    height: 4vh;
+    line-height: 4vh;
+    width: 440px;
+    text-align: center;
+    margin: 5px;
 }
 
 #progressbar {
     display: inline-flex;
+    border-radius: 2px;
+    background-clip: content-box;
     outline: 1px solid black;
+    outline-offset: 1px;
+    margin: 10px 0 20px;
 }
 
 #progressbar span {
@@ -76,6 +99,65 @@ body {
     outline: 1px solid white;
     display: inline-block;
     width: 50px;
-    height: 20px;
+    height: 15px;
     margin: 0;
 }
+
+#progressbar span:first-child {
+    border-radius: 2px 0 0 2px;
+}
+
+#progressbar span:last-child {
+    border-radius: 0 2px 2px 0;
+}
+
+button {
+    border-radius: 5px;
+    height: 40px;
+    width: 80px;
+    margin: 1px;
+}
+
+#prev, #next {
+    width: 40px;
+}
+
+#prev {
+    border: 2px solid black;
+    color: black;
+    border-radius: 12px 5px 5px 12px;
+}
+
+#next {
+    border: 2px solid black;
+    color: black;
+    border-radius: 5px 12px 12px 5px;
+}
+
+button:disabled, button#next:disabled, button#prev:disabled {
+    border-color: lightgray;
+    border-style: solid;
+    color: lightgray;
+}
+
+.fa-circle-xmark, .fa-circle-check, .fa-check {
+    margin-left: 5vw;
+}
+
+.fa-circle-xmark {
+    color: red;
+}
+.fa-circle-check {
+    color: green;
+}
+.fa-check {
+    color: lightgreen;
+}
+
+#results ol {
+    font-size: small;
+}
+#results h3 {
+    font-size: large;
+}
+
