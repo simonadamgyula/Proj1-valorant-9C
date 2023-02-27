@@ -3,13 +3,15 @@
 
 body {
     font-family: 'Noto Sans', sans-serif;
-    background-color: #faf8e8;
+    background: linear-gradient(white, gray);
+    min-height: 100vh;
 }
 
 .navbar {
     font-family: 'Anton', sans-serif;
     font-size: larger;
     font-weight: bold;
+    background-color: white !important;
 }
 
 .navbar-brand {
@@ -17,7 +19,7 @@ body {
     padding: auto 10px;
 }
 
-.navbar-item>a {
+.nav-item>a {
     padding: unset 10px;
 }
 
@@ -34,8 +36,8 @@ body {
     border: none;
     padding: 10px;
     outline-offset: -5px;
-    outline: 1px solid gray;
-    background: #faf8f0;
+    outline: 1px solid black;
+    background: #faf8f055;
 }
 
 .agent-roles {
@@ -60,4 +62,145 @@ body {
 .fa-caret-down {
     transform: rotate(180deg);
     transition: transform 0.3s linear;
+}
+
+#question-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#answers {
+    list-style-type: none;
+    padding: 0;
+}
+
+#answers li {
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 4vh;
+    line-height: 4vh;
+    width: 440px;
+    text-align: center;
+    margin: 5px;
+}
+
+#progressbar {
+    display: inline-flex;
+    border-radius: 2px;
+    background-clip: content-box;
+    outline: 1px solid black;
+    outline-offset: 1px;
+    margin: 10px 0 20px;
+}
+
+#progressbar span {
+    background-color: gray;
+    outline: 1px solid white;
+    display: inline-block;
+    width: 50px;
+    height: 15px;
+    margin: 0;
+}
+
+#progressbar span:first-child {
+    border-radius: 2px 0 0 2px;
+}
+
+#progressbar span:last-child {
+    border-radius: 0 2px 2px 0;
+}
+
+#buttons button {
+    border-radius: 5px;
+    height: 40px;
+    width: 80px;
+    margin: 1px;
+}
+
+#prev, #next {
+    width: 40px;
+}
+
+#prev {
+    border: 2px solid black;
+    color: black;
+    border-radius: 12px 5px 5px 12px;
+}
+
+#next {
+    border: 2px solid black;
+    color: black;
+    border-radius: 5px 12px 12px 5px;
+}
+
+#buttons button:disabled, #buttons button#next:disabled, #buttons button#prev:disabled {
+    border-color: lightgray;
+    border-style: solid;
+    color: lightgray;
+}
+
+.fa-circle-xmark, .fa-circle-check, .fa-check {
+    margin-left: 5vw;
+}
+
+.fa-circle-xmark {
+    color: red;
+    text-shadow: 0 0 5px white;
+}
+.fa-circle-check {
+    color: rgb(0, 128, 0);
+    text-shadow: 0 0 5px white;
+}
+.fa-check {
+    color: rgb(0, 87, 0);
+    text-shadow: 0 0 5px white;
+}
+
+#results ol {
+    font-size: small;
+}
+#results h3 {
+    font-size: large;
+}
+
+.result {
+    background-color: #ffffff50;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 60vw;
+}
+
+#result-table {
+    display: flex;
+    position: absolute;
+    max-width: 128px;
+    flex-wrap: wrap;
+    padding: 10px;
+    background-color: gray;
+    margin: 5px;
+    border-radius: 20px;
+    right: 20px;
+    top: 80px;
+}
+
+#result-table span {
+    font-family: 'Anton', sans-serif;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    margin: 2px;
+    border-radius: 10px;
+    border: 2px solid black;
+    line-height: 46px;
+    text-align: center;
+}
+
+#result-table > span#overall {
+    width: 104px;
+    margin-bottom: 20px;
+    border: 2px solid lightgray;
 }

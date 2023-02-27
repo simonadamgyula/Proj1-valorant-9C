@@ -11,7 +11,6 @@ $('#maps-carousel').on('slid.bs.carousel', function() {
 function changeSlide() {
     $("#details div").css("display", "none");
     $(`#details div:nth-child(${currentIndex + 1})`).css("display", "block");
-    console.log(currentIndex);
 }
 
 changeSlide();
@@ -25,10 +24,8 @@ $(".agent-roles").on("click", function () {
     if (isOpen) {
         arrow.removeClass("open");
         $(`.agents-${role[0]}`).css("display", "none");
-        console.log("close", arrow, role[0]);
     } else {
         arrow.addClass("open");
         $(`.agents-${role[0]}`).css("display", "flex");
-        console.log("open", arrow, role[0]);
     }
 })
