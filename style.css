@@ -113,6 +113,8 @@ body {
 }
 
 #buttons button {
+    border-style: solid;
+    border-color: black;
     border-radius: 5px;
     height: 40px;
     width: 80px;
@@ -120,19 +122,19 @@ body {
 }
 
 #prev, #next {
-    width: 40px;
+    width: 40px !important;
 }
 
 #prev {
     border: 2px solid black;
     color: black;
-    border-radius: 12px 5px 5px 12px;
+    border-radius: 12px 5px 5px 12px !important;
 }
 
 #next {
     border: 2px solid black;
     color: black;
-    border-radius: 5px 12px 12px 5px;
+    border-radius: 5px 12px 12px 5px !important;
 }
 
 #buttons button:disabled, #buttons button#next:disabled, #buttons button#prev:disabled {
@@ -204,3 +206,13 @@ body {
     margin-bottom: 20px;
     border: 2px solid lightgray;
 }
+
+#result-table > span#restart {
+    width: 104px;
+    margin-top: 40px;
+    border: 2px solid red;
+    background: rgb(255, 227, 227);
+    color: red;
+    cursor: pointer;
+}
+
