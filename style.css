@@ -11,6 +11,7 @@ body {
     font-family: 'Anton', sans-serif;
     font-size: larger;
     font-weight: bold;
+    background-color: white !important;
 }
 
 .navbar-brand {
@@ -164,15 +165,42 @@ body {
     font-size: large;
 }
 
+.result {
+    background-color: #ffffff50;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 60vw;
+}
+
 #result-table {
     display: flex;
-    max-width: 110px;
-    flex-flow: column-reverse;
+    position: absolute;
+    max-width: 128px;
+    flex-wrap: wrap;
+    padding: 10px;
+    background-color: gray;
+    margin: 5px;
+    border-radius: 20px;
+    right: 20px;
+    top: 80px;
 }
 
 #result-table span {
+    font-family: 'Anton', sans-serif;
     display: inline-block;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     background-color: white;
+    margin: 2px;
+    border-radius: 10px;
+    border: 2px solid black;
+    line-height: 46px;
+    text-align: center;
+}
+
+#result-table > span#overall {
+    width: 104px;
+    margin-bottom: 20px;
+    border: 2px solid lightgray;
 }

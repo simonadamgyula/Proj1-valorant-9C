@@ -35,7 +35,10 @@ class Question {
             result.push(element.isCorrect(element.givenAnswer));
         });
 
-        return result;
+        const currect = result.filter(value => value == true);
+        let num = currect.length;
+
+        return { result, num };
     }
 }
 
@@ -134,7 +137,7 @@ $("#submit").on("click", function () {
 
     $('#question-box').css("display", "none");
 
-    let result = Question.getCorrects(qs);
+    const { result, num } = Question.getCorrects(qs);
     console.log(result);
 
     let cross = '<i class="fa-regular fa-circle-xmark"></i>';
@@ -158,7 +161,15 @@ $("#submit").on("click", function () {
         resultList = resultList.concat(" ", `<div class='result'><h3 class='result-question'>${element.question}</h3><ol><li>${firstChoice}</li><li>${secondChoice}</li><li>${thirdChoice}</li></ol></div>`);
     });
 
+    resultList = resultList.concat(" ", `<div id="result-table"><span id="overall">10/${num}</span><span id="res-1">1</span><span id="res-2">2</span><span id="res-3">3</span><span id="res-4">4</span><span id="res-5">5</span><span id="res-6">6</span><span id="res-7">7</span><span id="res-8">8</span><span id="res-9">9</span><span id="res-10">10</span></div>`);
+
     $("#results").html(resultList);
+
+    qs.forEach(element => {
+        index = element.index + 1;
+        console.log(`#res-${index}`, result[index-1]);
+        $(`#res-${index}`).css("background-color", result[index-1] ? "#6eff99" : "#ff5c5c");
+    });
 });
 
 changeQuestion();
