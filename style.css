@@ -3,7 +3,7 @@
 
 body {
     font-family: 'Noto Sans', sans-serif;
-    background-color: #faf8e8;
+    background: linear-gradient(white, gray);
     min-height: 100vh;
 }
 
@@ -18,7 +18,7 @@ body {
     padding: auto 10px;
 }
 
-.navbar-item>a {
+.nav-item>a {
     padding: unset 10px;
 }
 
@@ -35,8 +35,8 @@ body {
     border: none;
     padding: 10px;
     outline-offset: -5px;
-    outline: 1px solid gray;
-    background: #faf8f0;
+    outline: 1px solid black;
+    background: #faf8f055;
 }
 
 .agent-roles {
@@ -76,7 +76,7 @@ body {
 }
 
 #answers li {
-    border: 1px solid grey;
+    border: 2px solid black;
     border-radius: 5px;
     height: 4vh;
     line-height: 4vh;
@@ -111,7 +111,7 @@ body {
     border-radius: 0 2px 2px 0;
 }
 
-button {
+#buttons button {
     border-radius: 5px;
     height: 40px;
     width: 80px;
@@ -134,7 +134,7 @@ button {
     border-radius: 5px 12px 12px 5px;
 }
 
-button:disabled, button#next:disabled, button#prev:disabled {
+#buttons button:disabled, #buttons button#next:disabled, #buttons button#prev:disabled {
     border-color: lightgray;
     border-style: solid;
     color: lightgray;
@@ -146,12 +146,15 @@ button:disabled, button#next:disabled, button#prev:disabled {
 
 .fa-circle-xmark {
     color: red;
+    text-shadow: 0 0 5px white;
 }
 .fa-circle-check {
-    color: green;
+    color: rgb(0, 128, 0);
+    text-shadow: 0 0 5px white;
 }
 .fa-check {
-    color: lightgreen;
+    color: rgb(0, 87, 0);
+    text-shadow: 0 0 5px white;
 }
 
 #results ol {
@@ -161,3 +164,15 @@ button:disabled, button#next:disabled, button#prev:disabled {
     font-size: large;
 }
 
+#result-table {
+    display: flex;
+    max-width: 110px;
+    flex-flow: column-reverse;
+}
+
+#result-table span {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+}
