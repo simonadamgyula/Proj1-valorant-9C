@@ -161,7 +161,7 @@ $("#submit").on("click", function () {
         resultList = resultList.concat(" ", `<div class='result'><h3 class='result-question'>${element.question}</h3><ol><li>${firstChoice}</li><li>${secondChoice}</li><li>${thirdChoice}</li></ol></div>`);
     });
 
-    resultList = resultList.concat(" ", `<div id="result-table"><span id="overall">10/${num}</span><span id="res-1">1</span><span id="res-2">2</span><span id="res-3">3</span><span id="res-4">4</span><span id="res-5">5</span><span id="res-6">6</span><span id="res-7">7</span><span id="res-8">8</span><span id="res-9">9</span><span id="res-10">10</span></div>`);
+    resultList = resultList.concat(" ", `<div id="result-table"><span id="overall">10/${num}</span><span id="res-1">1</span><span id="res-2">2</span><span id="res-3">3</span><span id="res-4">4</span><span id="res-5">5</span><span id="res-6">6</span><span id="res-7">7</span><span id="res-8">8</span><span id="res-9">9</span><span id="res-10">10</span><span id="restart">Restart</span></div>`);
 
     $("#results").html(resultList);
 
@@ -169,6 +169,10 @@ $("#submit").on("click", function () {
         index = element.index + 1;
         console.log(`#res-${index}`, result[index-1]);
         $(`#res-${index}`).css("background-color", result[index-1] ? "#6eff99" : "#ff5c5c");
+    });
+
+    $("#restart").on("click", function () {
+        location.reload(true);
     });
 });
 
