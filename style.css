@@ -14,6 +14,10 @@ body {
     background-color: white !important;
 }
 
+h1 {
+    font-family: 'Anton', sans-serif;
+}
+
 .navbar-brand {
     display: inline-block;
     padding: auto 10px;
@@ -24,8 +28,13 @@ body {
 }
 
 #maps-carousel {
-    margin: 20px auto;
+    margin: 0px auto;
     width: 65% !important;
+    border-radius: 15px;
+}
+
+#maps-carousel img {
+    border-radius: 15px;
 }
 
 .row {
@@ -216,3 +225,31 @@ body {
     cursor: pointer;
 }
 
+#container {
+    margin: 0 10px 10px;
+    padding: 0 15px 15px;
+    background-color: #ffffff11;
+    border-radius: 20px;
+}
+
+#carousel-container {
+    padding: 20px 0 10px;
+    border-radius: 15px;
+    background-color: #ffffff10;
+}
+
+#details {
+    margin-top: 40px;
+}
+
+#details > div > h1 {
+    margin-bottom: 0;
+}
+
+#details > div > h4 {
+    margin-bottom: 20px;
+}
+
+#details > div > p {
+    margin-bottom: 0;
+}
