@@ -7,6 +7,10 @@ body {
     min-height: 100vh;
 }
 
+p {
+    font-family: 'Noto Sans', sans-serif;
+}
+
 .navbar {
     font-family: 'Anton', sans-serif;
     font-size: larger;
@@ -319,4 +323,67 @@ th img {
 th:has(img) {
     width: 90px;
     height: 90px;
+}
+
+/* -------- About ------------------------------- */
+
+#about {
+    margin: 40px;
+}
+
+#person-1, #person-2 {
+    display: flex;
+    background-color: #ffffff39;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+#person-2 a {
+    text-decoration: none;
+    color: black;
+    cursor: default;
+}
+
+#person-1 h3, #person-2 h3 {
+    font-family: 'Anton', sans-serif;
+    color: black;
+    margin-bottom: 25px;
+}
+
+#person-1 img, #person-2 img {
+    width: 20vw;
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+#person-1 {
+    margin-bottom: 10px;
+}
+
+#person-2 {
+    flex-direction: row-reverse;
+}
+
+#person-1 img {
+    margin-left: 40px;
+}
+
+#person-2 img {
+    margin-right: 40px;
+}
+
+#person-1 span, #person-2 span {
+    display: flex;
+    flex-direction: column;
+}
+
+#person-1 p:not(.author), #person-2 p:not(.author) {
+    flex-grow: 2;
+}
+
+.author {
+    text-align: right;
+    font-size: small;
+    margin-right: 10vw;
+    color: rgb(63, 63, 63)
 }
