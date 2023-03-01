@@ -198,22 +198,22 @@ $(".card").on("click", function () {
       </thead>
       <tbody>
         <tr>
-          <th scope="row"><img src="${abilityList[0][1][0]}" alt=""></th>
+          <th scope="row"><img src="${abilityList[0][1][0]}" alt="${abilityList[0][0]}"></th>
           <td>${abilityList[0][0]}</td>
-          <td><img src="sources/abilities/Credits_icon.png" title="Creds"></img>${abilityList[0][1][1]}</td>
+          <td><img src="sources/abilities/Credits_icon.png" title="Creds" alt="Creds"></img>${abilityList[0][1][1]}</td>
         </tr>
         <tr>
-          <th scope="row"><img src="${abilityList[1][1][0]}" alt=""></th>
+          <th scope="row"><img src="${abilityList[1][1][0]}" alt="${abilityList[1][0]}"></th>
           <td>${abilityList[1][0]}</td>
-          <td><img src="sources/abilities/Credits_icon.png" title="Creds"></img>${abilityList[1][1][1]}</td>
+          <td><img src="sources/abilities/Credits_icon.png" title="Creds" alt="Creds"></img>${abilityList[1][1][1]}</td>
         </tr>
         <tr>
-          <th scope="row"><img src="${abilityList[2][1][0]}" alt=""></th>
+          <th scope="row"><img src="${abilityList[2][1][0]}" alt="${abilityList[2][0]}"></th>
           <td>${abilityList[2][0]}</td>
-          <td>${abilityList[2][1][1] === "Free" ? "Free" : '<img src="sources/abilities/Credits_icon.png" title="Creds"></img>' + abilityList[2][1][1]}</td>
+          <td>${abilityList[2][1][1] === "Free" ? "Free" : '<img src="sources/abilities/Credits_icon.png" title="Creds" alt="Creds"></img>' + abilityList[2][1][1]}</td>
         </tr>
         <tr>
-          <th scope="row"><img src="${abilityList[3][1][0]}" alt=""></th>
+          <th scope="row"><img src="${abilityList[3][1][0]}" alt="${abilityList[3][0]}"></th>
           <td>${abilityList[3][0]}</td>
           <td>${"♦".repeat(abilityList[3][1][1])} (${abilityList[3][1][1]} points)</td>
         </tr>
@@ -230,22 +230,22 @@ $(".card").on("click", function () {
       </thead>
       <tbody>
         <tr>
-          <th scope="row"><img src="${abilityList[0][1][0]}" alt=""></th>
+          <th scope="row"><img src="${abilityList[0][1][0]}" alt="${abilityList[0][0]}"></th>
           <td>${abilityList[0][0]}</td>
-          <td>Star (<img src="sources/abilities/Credits_icon.png title="Creds"></img>${abilityList[0][1][1]})</td>
+          <td>Star (<img src="sources/abilities/Credits_icon.png title="Creds" alt="Creds"></img>${abilityList[0][1][1]})</td>
         </tr>
         <tr>
-          <th scope="row"><img src="${abilityList[1][1][0]}" alt=""></th>
+          <th scope="row"><img src="${abilityList[1][1][0]}" alt="${abilityList[1][0]}"></th>
           <td>${abilityList[1][0]}</td>
-          <td>Star (<img src="sources/abilities/Credits_icon.png title="Creds"></img>${abilityList[1][1][1]})</td>
+          <td>Star (<img src="sources/abilities/Credits_icon.png title="Creds" alt="Creds"></img>${abilityList[1][1][1]})</td>
         </tr>
         <tr>
-          <th scope="row"><img src="${abilityList[2][1][0]}" alt=""></th>
+          <th scope="row"><img src="${abilityList[2][1][0]}" alt="${abilityList[2][0]}"></th>
           <td>${abilityList[2][0]}</td>
-          <td>Star (<img src="sources/abilities/Credits_icon.png title="Creds"></img>${abilityList[2][1][1]})</td>
+          <td>Star (<img src="sources/abilities/Credits_icon.png title="Creds" alt="Creds"></img>${abilityList[2][1][1]})</td>
         </tr>
         <tr>
-          <th scope="row"><img src="${abilityList[3][1][0]}" alt=""></th>
+          <th scope="row"><img src="${abilityList[3][1][0]}" alt="${abilityList[3][0]}"></th>
           <td>${abilityList[3][0]}</td>
           <td>♦♦♦♦♦♦♦ (7 points)</td>
         </tr>
