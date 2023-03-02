@@ -266,6 +266,7 @@ h1 {
     padding: 10px 20px;
     margin: 100px 50px 10px;
     border-radius: 20px;
+    text-align: center;
 }
 
 #agent-description > h2 {
