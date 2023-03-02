@@ -387,3 +387,24 @@ th:has(img) {
     margin-right: 10vw;
     color: rgb(63, 63, 63)
 }
+
+.gamemode {
+    background-color: #ffffff39;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 5px 0;
+    height: 110px;
+}
+
+.gamemode p {
+    font-size: 80%;
+}
+
+#gamemodes {
+    margin: 40px;
+}
+
+.homeimg {
+    float: right;
+    height: 80px;
+}
