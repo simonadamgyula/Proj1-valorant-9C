@@ -188,7 +188,7 @@ $(".card").on("click", function () {
   abilityList = agent.abilityList
 
   if (agent.name != "astra") {
-    $("#agent-description").html(`<table class="table">
+    $("#agent-inactive").html(`<table class="table">
       <thead>
         <tr>
           <th scope="col">Ikon</th>
@@ -220,7 +220,7 @@ $(".card").on("click", function () {
       </tbody>
     </table>`);
   } else {
-    $("#agent-description").html(`<table class="table">
+    $("#agent-inactive").html(`<table class="table">
       <thead>
         <tr>
           <th scope="col">Ikon</th>
@@ -252,6 +252,8 @@ $(".card").on("click", function () {
       </tbody>
     </table>`);
   }
+
+  $("#agent-inactive").attr("id", "agent-description");
 
   $("html, body").animate({ scrollTop: $(document).height() }, 10);
 });

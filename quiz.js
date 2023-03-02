@@ -84,7 +84,7 @@ function changeQuestion() {
         }
     }
 
-    $(`#answers li:nth-child(${currentQuestion.givenAnswer + 1})`).css("background-color", "#e0e0e0");
+    $(`#answers li:nth-child(${currentQuestion.givenAnswer + 1})`).css("background-color", "#c0c0c0");
     $(`#answers li:not(:nth-child(${currentQuestion.givenAnswer + 1}))`).css("background-color", "white");
 
     if (current === 0) {

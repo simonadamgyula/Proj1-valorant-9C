@@ -388,23 +388,84 @@ th:has(img) {
     color: rgb(63, 63, 63)
 }
 
+/* ------- Index -------------------------- */
+
+#abtval {
+    margin: 40px;
+    background-color: #ffffff39;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+#abtval h2 {
+    font-family: 'Anton', sans-serif;
+}
+
+#abtval a {
+    text-decoration: none;
+    color: #0039ca !important;
+    font-weight: 500;
+}
+
 .gamemode {
     background-color: #ffffff39;
     padding: 20px;
     border-radius: 20px;
     margin: 5px 0;
-    height: 110px;
+    min-height: 110px;
+    display: flex;
+}
+
+.gamemode span {
+    flex-grow: 2;
 }
 
 .gamemode p {
     font-size: 80%;
 }
 
-#gamemodes {
-    margin: 40px;
+.gamemode img {
+    width: 70px;
+    object-fit: contain;
 }
 
-.homeimg {
-    float: right;
-    height: 80px;
+#gamemodes {
+    margin: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+#gamemodes > img {
+    /* max-width: 20vw; */
+    object-fit: contain;
+    max-height: 780px;
+    margin-left: 20px;
+    border-radius: 15px;
+}
+
+#gamemodes h3, #gamemodes h4 {
+    font-family: 'Anton', sans-serif;
+}
+
+#weapons {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 40px;
+    background-color: #ffffff39;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+#weapons span {
+    padding-right: 130px;
+}
+
+#weapons h3 {
+    font-family: 'Anton', sans-serif;
+}
+
+#weapons img {
+    margin-right: 30px;
+    max-width: 30vw;
+    border-radius: 10px;
 }
