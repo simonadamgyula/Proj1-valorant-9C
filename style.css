@@ -516,3 +516,13 @@ th:has(img) {
     max-width: 30vw;
     border-radius: 10px;
 }
+
+@media screen and (max-width: 800px) {
+    #gamemodes > img {
+        display: none;
+    }
+
+    #weapons {
+        flex-direction: column;
+    }
+}
