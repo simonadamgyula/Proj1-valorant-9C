@@ -259,5 +259,7 @@ $(".card").on("click", function () {
     </table>${agent.imageHtml}</span>`);
   }
 
+  $("#agent-inactive").attr("id", "agent-description");
+
   $("html, body").animate({ scrollTop: $(document).height() }, 10);
 });
