@@ -27,125 +27,129 @@ class Agent {
   get abilityList() {
     return Object.entries(this.abilities);
   }
+
+  get imageHtml() {
+    return `<img src=${this.image} alt=${this.name}>`;
+  }
 }
 
 const agentRoles = ["duelists", "controllers", "initiators", "sentinels"]
 const agents = [
-  new Agent("brimstone", "sources/brim.png", {
+  new Agent("brimstone", "sources/agents/brim.png", {
     "C - Stim Beacon": ["sources/abilities/Brimstone_C.png", "200"],
     "Q - Incendiary": ["sources/abilities/Brimstone_Q.png", "250"],
     "E - Sky Smoke": ["sources/abilities/Brimstone_E.png", "100"],
     "X - Orbital Strike": ["sources/abilities/Brimstone_X.png", "7"]
   }),
-  new Agent("phoenix", "sources/phoenix.png", {
+  new Agent("phoenix", "sources/agents/phoenix.png", {
     "C - Blaze": ["sources/abilities/Phoenix_C.png", "150"],
     "Q - Curveball": ["sources/abilities/Phoenix_Q.png", "250"],
     "E - Hot Hands": ["sources/abilities/Phoenix_E.png", "Free"],
     "X - Run It Back": ["sources/abilities/Phoenix_X.png", "6"]
   }),
-  new Agent("sage", "sources/sage.png", {
+  new Agent("sage", "sources/agents/sage.png", {
     "C - Barrier Orb": ["sources/abilities/Sage_C.png", "400"],
     "Q - Slow Orb": ["sources/abilities/Sage_Q.png", "200"],
     "E - Healing Orb": ["sources/abilities/Sage_E.png", "Free"],
     "X - Resurrection": ["sources/abilities/Sage_X.png", "8"]
   }),
-  new Agent("sova", "sources/sova.png", {
+  new Agent("sova", "sources/agents/sova.png", {
     "C - Owl Drone": ["sources/abilities/Sova_C.png", "400"],
     "Q - Shock Bolt": ["sources/abilities/Sova_Q.png", "150"],
     "E - Recon Bolt": ["sources/abilities/Sova_E.png", "Free"],
     "X - Hunter's Fury": ["sources/abilities/Sova_X.png", "8"]
   }),
-  new Agent("viper", "sources/viper.png", {
+  new Agent("viper", "sources/agents/viper.png", {
     "C - Snake Bite": ["sources/abilities/Viper_C.png", "200"],
     "Q - Poison Cloud": ["sources/abilities/Viper_Q.png", "200"],
     "E - Toxic Screen": ["sources/abilities/Viper_E.png", "Free"],
     "X - Viper's Pit": ["sources/abilities/Viper_X.png", "8"]
   }),
-  new Agent("cypher", "sources/cypher.png", {
+  new Agent("cypher", "sources/agents/cypher.png", {
     "C - Cyber Cage": ["sources/abilities/Cypher_C.png", "200"],
     "Q - Trapwire": ["sources/abilities/Cypher_Q.png", "100"],
     "E - Spycam": ["sources/abilities/Cypher_E.png", "Free"],
     "X - Neural Theft": ["sources/abilities/Cypher_X.png", "6"]
   }),
-  new Agent("reyna", "sources/reyna.png", {
+  new Agent("reyna", "sources/agents/reyna.png", {
     "C - Leer": ["sources/abilities/Reyna_C.png", "250"],
     "Q - Dismiss": ["sources/abilities/Reyna_Q.png", "200"],
     "E - Devour": ["sources/abilities/Reyna_E.png", "200"],
     "X - Empress": ["sources/abilities/Reyna_X.png", "6"]
   }),
-  new Agent("killjoy", "sources/kj.png", {
+  new Agent("killjoy", "sources/agents/kj.png", {
     "C - Alermbot": ["sources/abilities/KJ_C.png", "200"],
     "Q - Nanoswarm": ["sources/abilities/KJ_Q.png", "200"],
     "E - Turret": ["sources/abilities/KJ_E.png", "Free"],
     "X - Lockdown": ["sources/abilities/KJ_X.png", "8"]
   }),
-  new Agent("breach", "sources/breach.png", {
+  new Agent("breach", "sources/agents/breach.png", {
     "C - Aftershock": ["sources/abilities/Breach_C.png", "200"],
     "Q - Flashpoint": ["sources/abilities/Breach_Q.png", "250"],
     "E - Fault Line": ["sources/abilities/Breach_E.png", "Free"],
     "X - Rolling Thunder": ["sources/abilities/Breach_X.png", "8"]
   }),
-  new Agent("omen", "sources/omen.png", {
+  new Agent("omen", "sources/agents/omen.png", {
     "C - Shrouded Step": ["sources/abilities/Omen_C.png", "100"],
     "Q - Paranoia": ["sources/abilities/Omen_Q.png", "250"],
     "E - Dark Cover": ["sources/abilities/Omen_E.png", "150"],
     "X - From the Shadows": ["sources/abilities/Omen_X.png", "7"]
   }),
-  new Agent("jett", "sources/jett.png", {
+  new Agent("jett", "sources/agents/jett.png", {
     "C - Cloudburst": ["sources/abilities/Jett_C.png", "200"],
     "Q - Updraft": ["sources/abilities/Jett_Q.png", "150"],
     "E - Tailwind": ["sources/abilities/Jett_E.png", "Free"],
     "X - Blade Storm": ["sources/abilities/Jett_X.png", "7"]
   }),
-  new Agent("raze", "sources/raze.png", {
+  new Agent("raze", "sources/agents/raze.png", {
     "C - Boom Bot": ["sources/abilities/Raze_C.png", "300"],
     "Q - Blast Pack": ["sources/abilities/Raze_Q.png", "20"],
     "E - Paint Shell": ["sources/abilities/Raze_E.png", "Free"],
     "X - Showstopper": ["sources/abilities/Raze_X.png", "8"]
   }),
-  new Agent("skye", "sources/skye.png", {
+  new Agent("skye", "sources/agents/skye.png", {
     "C - Regrowth": ["sources/abilities/Skye_C.png", "150"],
     "Q - Trailblazer": ["sources/abilities/Skye_Q.png", "300"],
     "E - Guiding Light": ["sources/abilities/Skye_E.png", "250"],
     "X - Seekers": ["sources/abilities/Skye_X.png", "7"]
   }),
-  new Agent("yoru", "sources/yoru.png", {
+  new Agent("yoru", "sources/agents/yoru.png", {
     "C - Fakeout": ["sources/abilities/Yoru_C.png", "100"],
     "Q - Blindside": ["sources/abilities/Yoru_Q.png", "250"],
     "E - Gatecrash": ["sources/abilities/Yoru_E.png", "150"],
     "X - Dimensional Drift": ["sources/abilities/Yoru_X.png", "7"]
   }),
-  new Agent("astra", "sources/astra.png", {
+  new Agent("astra", "sources/agents/astra.png", {
     "C - Gravity Well": ["sources/abilities/Astra_C.png", "150"],
     "Q - Nova Pulse": ["sources/abilities/Astra_Q.png", "150"],
     "E - Nebula": ["sources/abilities/Astra_E.png", "150"],
     "X - Astral Form / Cosmic Divide": ["sources/abilities/Astra_X.png", "7"]
   }),
-  new Agent("kayo", "sources/kayo.png", {
+  new Agent("kayo", "sources/agents/kayo.png", {
     "C - Frag/ment": ["sources/abilities/KO_C.png", "200"],
     "Q - Flash/drive": ["sources/abilities/KO_Q.png", "250"],
     "E - Zero/point": ["sources/abilities/KO_E.png", "Free"],
     "X - Null/CMD": ["sources/abilities/KO_X.png", "8"]
   }),
-  new Agent("chamber", "sources/chamber.png", {
+  new Agent("chamber", "sources/agents/chamber.png", {
     "C - Trademark": ["sources/abilities/Chamber_C.png", "200"],
     "Q - Headhunter": ["sources/abilities/Chamber_Q.png", "150"],
     "E - Randezvous": ["sources/abilities/Chamber_E.png", "Free"],
     "X - Tour de Force": ["sources/abilities/Chamber_X.png", "8"]
   }),
-  new Agent("neon", "sources/neon.png", {
+  new Agent("neon", "sources/agents/neon.png", {
     "C - Fast Lane": ["sources/abilities/Neon_C.png", "300"],
     "Q - Relay Bolt": ["sources/abilities/Neon_Q.png", "200"],
     "E - High Gear": ["sources/abilities/Neon_E.png", "Free"],
     "X - Overdrive": ["sources/abilities/Neon_X.png", "7"]
   }),
-  new Agent("fade", "sources/fade.png", {
+  new Agent("fade", "sources/agents/fade.png", {
     "C - Prowler": ["sources/abilities/Fade_C.png", "250"],
     "Q - Seize": ["sources/abilities/Fade_Q.png", "200"],
     "E - Haunt": ["sources/abilities/Fade_E.png", "Free"],
     "X - Nightfall": ["sources/abilities/Fade_X.png", "8"]
   }),
-  new Agent("harbor", "sources/harbor.png", {
+  new Agent("harbor", "sources/agents/harbor.png", {
     "C - Cascade": ["sources/abilities/Harbor_C.png", "150"],
     "Q - Cove": ["sources/abilities/Harbor_Q.png", "350"],
     "E - High Tide": ["sources/abilities/Harbor_E.png", "Free"],
@@ -188,7 +192,8 @@ $(".card").on("click", function () {
   abilityList = agent.abilityList
 
   if (agent.name != "astra") {
-    $("#agent-inactive").html(`<table class="table">
+    $("#agent-description").html(`<h2>${agent.name.charAt(0).toUpperCase() + agent.name.slice(1)}</h2><span><table class="table">
+      <caption>Képességek</caption>
       <thead>
         <tr>
           <th scope="col">Ikon</th>
@@ -218,9 +223,10 @@ $(".card").on("click", function () {
           <td>${"♦".repeat(abilityList[3][1][1])} (${abilityList[3][1][1]} points)</td>
         </tr>
       </tbody>
-    </table>`);
+    </table>${agent.imageHtml}</span>`);
   } else {
-    $("#agent-inactive").html(`<table class="table">
+    $("#agent-description").html(`<h2>${agent.name.charAt(0).toUpperCase() + agent.name.slice(1)}</h2><span><table class="table">
+      <caption>Képességek</caption>
       <thead>
         <tr>
           <th scope="col">Ikon</th>
@@ -232,17 +238,17 @@ $(".card").on("click", function () {
         <tr>
           <th scope="row"><img src="${abilityList[0][1][0]}" alt="${abilityList[0][0]}"></th>
           <td>${abilityList[0][0]}</td>
-          <td>Star (<img src="sources/abilities/Credits_icon.png title="Creds" alt="Creds"></img>${abilityList[0][1][1]})</td>
+          <td>Star (<img src="sources/abilities/Credits_icon.png" title="Creds" alt="Creds"></img>${abilityList[0][1][1]})</td>
         </tr>
         <tr>
           <th scope="row"><img src="${abilityList[1][1][0]}" alt="${abilityList[1][0]}"></th>
           <td>${abilityList[1][0]}</td>
-          <td>Star (<img src="sources/abilities/Credits_icon.png title="Creds" alt="Creds"></img>${abilityList[1][1][1]})</td>
+          <td>Star (<img src="sources/abilities/Credits_icon.png" title="Creds" alt="Creds"></img>${abilityList[1][1][1]})</td>
         </tr>
         <tr>
           <th scope="row"><img src="${abilityList[2][1][0]}" alt="${abilityList[2][0]}"></th>
           <td>${abilityList[2][0]}</td>
-          <td>Star (<img src="sources/abilities/Credits_icon.png title="Creds" alt="Creds"></img>${abilityList[2][1][1]})</td>
+          <td>Star (<img src="sources/abilities/Credits_icon.png" title="Creds" alt="Creds"></img>${abilityList[2][1][1]})</td>
         </tr>
         <tr>
           <th scope="row"><img src="${abilityList[3][1][0]}" alt="${abilityList[3][0]}"></th>
@@ -250,7 +256,7 @@ $(".card").on("click", function () {
           <td>♦♦♦♦♦♦♦ (7 points)</td>
         </tr>
       </tbody>
-    </table>`);
+    </table>${agent.imageHtml}</span>`);
   }
 
   $("#agent-inactive").attr("id", "agent-description");

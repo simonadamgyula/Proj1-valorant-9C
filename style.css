@@ -263,18 +263,64 @@ h1 {
 
 #agent-description {
     background-color: #ffffff20;
-    padding: 10px 0;
-    margin: 100px 200px 10px;
+    padding: 10px 20px;
+    margin: 100px 50px 10px;
     border-radius: 20px;
+    text-align: center;
+}
+
+#agent-description > h2 {
+    font-family: 'Anton', sans-serif;
+    background-color: #ffffff20;
+    text-align: center;
+    padding: 10px;
+    border-radius: 30px;
+    margin-bottom: 30px;
+}
+
+#agent-description > span {
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 1150px) {
+    #agent-description > span {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #agent-description > span > table {
+        width: 80vw !important;
+    }
+}
+
+#agent-description > span > img {
+    object-fit: contain;
+    height: 700px;
 }
 
 table {
+    flex-grow: 2;
+    caption-side: top;
     width: 50vw !important;
-    margin: 10px auto;
+    margin: 10px;
     border-collapse: separate;
     border-spacing: 0 5px;
     font-family: 'Anton', sans-serif;
     font-size: x-large;
+}
+
+table caption {
+    text-align: center;
+    color: black;
+    background-color: #ffffff10;
+    border-radius: 40px;
+    margin-bottom: 20px;
+}
+
+tr:not(:first-child), tr:not(:first-child) th, tr:not(:first-child) td {
+    height: 120px;
 }
 
 tr th:first-child {
@@ -298,6 +344,7 @@ tr td:nth-child(2), tr td:nth-child(3), tr th:nth-child(2), tr th:nth-child(3) {
 }
 
 th {
+    display: table-cell;
     text-align: center;
 }
 
@@ -309,7 +356,7 @@ th, td {
 }
 
 .table > :not(thead) > tr > * {
-    line-height: 136px;
+    line-height: 120px;
 }
 
 th img {
