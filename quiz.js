@@ -45,7 +45,7 @@ class Question {
 current = 0;
 
 qs = [
-    new Question(1, "1. Mikor adták ki a Valorant végleges verzióját?", ["2019 október", "2020 szeptember", "2020 június"], 2),
+    new Question(1, "1. Mikor adták ki a Valorant végleges verzióját?", ["2019. október", "2020. szeptember", "2020. június"], 2),
     new Question(2, "2. Jelenleg hány ügynök (agent) van a játékban?", ["20", "19", "18"], 0),
     new Question(3, "3. Ki volt az az ügynök (agent) aki a legutóbb érkezett a játékba?", ["Fade", "Skye", "Harbor"], 2),
     new Question(4, "4. Hány pisztoly van a játékban? (a képességek nem számítanak)", ["5", "6", "7"], 1),
